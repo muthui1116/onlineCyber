@@ -1,0 +1,33 @@
+/* CONTAINER FLUID */
+.container-fluid{
+    padding: 2% 9%;
+}
+
+/* NAVIGATION BAR */
+.navbar{
+    padding: 1rem 0 0rem;
+}
+
+h2{ 
+    margin: 0;  
+    text-align: center;
+}
+h3{
+    margin: 0;     
+}
+.header-form-items{
+    padding: 1% 26.9%;
+}
+.top-cybers{
+    padding: 2% 16%;
+}
+.top-cyber-images{
+    width:200px;
+    height:120px;
+}
+.choose-cyber{
+    padding: 2% 16%;
+    text-align: center;
+}
+
+
