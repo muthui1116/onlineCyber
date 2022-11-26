@@ -1,68 +1,8 @@
+{% extends 'home/base.html'%}
 {% load static%}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eCyber</title>
 
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/bf4cb2bb37.js" crossorigin="anonymous"></script>
-
-    <!-- Google Fonts  -->
-    <link href="https://fonts.googleapis.com/css2?family=Atomic+Age&family=Merriweather:wght@300&family=Montserrat&family=Roboto:wght@100&family=Sacramento&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
-
-    <!-- Favicon Link  -->
-    <link rel="icon" href="{% static 'home/images/log.ico'%}">
-
-    <!-- Bootstrap css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="{% static 'home/styles.css'%}">
-
-</head>
-<body>
-  <!-- HEADER SECTION -->
-  <!-- NAVIGATION BAR -->
-  <div class="header-section container-fluid">
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-           <a href=""><img src="{% static 'home/images/log.ico'%}" alt="" width="22px"></a> 
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item dropdown">
-                <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <form class="d-flex" role="search">
-                   <input class="form-control me-2" type="text" placeholder="Enter your delivary town" aria-label="Enter your delivary town">
-                   <button class="btn btn-outline-success" type="submit"><i class="	fas fa-sync-alt"></i></button>  
-                  </form>
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-            </ul>
-              <a class="nav-link me-1" href="#">LOGIN /</a>
-              <a class="nav-link me-2" href="#">REGISTER</a>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="text" placeholder="REGISTER RESTAURANT" aria-label="REGISTER RESTAURANT"> 
-            </form>
-          </div>
-        </div>
-      </nav>
-    </div>
-
-   <!-- HEADER FORM -->
-   <div>
+{% block content%}
+<div>
     <h2>We are in Business of Online Services</h2>
     <form class="header-form-items">
       <div class="row">
@@ -135,10 +75,4 @@
         <img class="top-cyber-images" src="{% static 'home/images/comp accesories.jpg'%}" alt="">
       </div>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
-    <script src="{% static 'home/index.js'%}" charset="UTF-8"></script>
-</body>
-
-</html>
+{% endblock%}
