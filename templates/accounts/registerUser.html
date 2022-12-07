@@ -8,12 +8,12 @@
       <form action="{% url 'registerUser'%}" method="POST">
        {% csrf_token%}
         <div class="row">
-          <div class="col form-group ">
+          <div class="col form">
             <label>First Name</label>
             {{ form.first_name}}
           </div>
           <!-- form-group end.// -->
-          <div class="col form-group">
+          <div class="col form">
             <label>Last Name</label>
             {{ form.last_name}}
           </div>
@@ -21,12 +21,12 @@
         </div>
         <!-- form-row end.// -->
         <div class="row">
-          <div class="form-group col-md-6">
+          <div class="form col-md-6">
             <label>Email Address</label>
             {{ form.email}}
           </div>
           <!-- form-group end.// -->
-          <div class="form-group col-md-6">
+          <div class="form col-md-6">
             <label>Username</label>
             {{ form.username}}
           </div>
@@ -34,7 +34,7 @@
         </div>
         <!-- form-row.// -->
         <div class="row">
-          <div class="form-group col-md-6">
+          <div class="form col-md-6">
             <label>Create password</label>
             {{ form.password}}
           </div>
@@ -45,23 +45,17 @@
           </div>
           <!-- form-group end.// -->
         </div>
-        <ul class="errorlist">
-          {% for field in form%}
-            {% if field.errors%}
-             {% for error in field.errors%}
-              <li style="color: red;">{{ error}}</li>
-             {% endfor%}
-            {% endif%}
-          {% endfor%}
-          <li style="color: red;">{{ form.non_field_errors}}</li>
-        </ul>
-        <div class="form-group">
+           <ul>
+              <div style="color: red;"> {{ form.email.errors}}</div>
+              <div style="color: red;"> {{ form.non_field_errors}}</div>
+           </ul>
+        <div class="form">
           <button type="submit" class="btn btn-primary btn-block mt-2">
             Submit
           </button>
         </div>
         <div class="row">
-          <div class="form-group col mt-2">
+          <div class="form col mt-2">
            <!-- load message -->
            {% include 'home/includes/alerts.html'%}
           </div>

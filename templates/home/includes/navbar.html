@@ -29,8 +29,8 @@
               <a class="nav-link me-4" href="{% url 'myAccount'%}">My Account</a>
               <a class="nav-link  text-danger" href="{% url 'logout'%}">LOGOUT</a>
               {% else%}
-              <a class="nav-link me-1" href="{% url 'login'%}">LOGIN /</a>
-              <a class="nav-link me-2" href="{% url 'registerUser'%}">REGISTER</a>
+              <a class="nav-link me-3" href="{% url 'login'%}">LOGIN</a>
+              <a class="nav-link me-3" href="{% url 'registerUser'%}">REGISTER</a>
               <a href="{% url 'registerVendor'%}"><button type="button" class="btn btn-danger">REGISTER RESTAURANT</button></a>
               {% endif%}
             <!-- <form class="d-flex" role="search">
