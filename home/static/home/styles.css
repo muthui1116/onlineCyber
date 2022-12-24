@@ -43,5 +43,16 @@ h3{
     right: 20px;
     animation-name: show-toast;
     animation-duration: 5s;
+    z-index: 99;
+}
+
+a:link { text-decoration: none; } 
+
+.active{
+    color:red; 
+}
+
+a:hover{
+    color:red;
 }
 

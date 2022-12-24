@@ -1,0 +1,14 @@
+<div class="user-account-nav user-account-sidebar">
+    <div class="user-nav-list">
+        <ul>
+            <a href="{% url 'vendorDashboard'%}" class="{% if '/accounts/vendorDashboard/' == request.path or '/accounts/vendor/' == request.path%}active {% endif%}"><i class='far fa-address-card'></i> Dashboard</a> <br>
+            <a href="{% url 'vprofile'%}" class="{% if 'vprofile' in request.path%}active {% endif%}"> <i class='fas fa-donate'></i>  My Restaurant</a> <br>
+            <a href="restaurant-menu-builder.html"><i class="fas fa-money-check"></i>  Menu Builder</a> <br>
+            <a href="restaurant-orders.html"><i class="fas fa-hand-holding-usd"></i>  Orders</a> <br>
+            <a href="restaurant-bookings.html"><i class="far fa-credit-card"></i>  Earnings</a> <br>
+            <a href="restaurant-reviews.html"><i class="fas fa-file-invoice"></i>  Statements</a> <br>
+            <a href="restaurant-change-password.html"><i class='fas fa-unlock'></i>  Change Password</a> <br>
+            <a class="logout-btn" href="registration.html"><i class="fas fa-power-off"></i>  Signout</a>
+        </ul>
+    </div>
+</div>

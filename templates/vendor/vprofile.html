@@ -8,39 +8,13 @@
 
 		<!-- Main Section Start -->
 		<div class="main-section">
-			<div class="page-section restaurant-detail-image-section" style=" background: url({% static 'home/images/comp repair.jpg'%}) no-repeat scroll 0 0 / cover;">
-				<!-- Container Start -->
-				<div class="container">
-					<!-- Row Start -->
-					<div class="row">
-						<!-- Column Start -->
-						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-							<div class="company-info-detail">
-                                <div class="img-holder mt-3">
-                                    <div class="img-holder">
-                                        <figure>
-                                            <span>
-                                                <img src="{% static 'home/images/log.png'%}" alt="" width="23px">
-                                                <span class="restaurant-title">Muthui Kyalo | 0716916128</span>
-                                                
-                                            </span>
-                                        </figure>
-                                    </div>
-                                </div>
-							</div>
-						</div>
-						<!-- Column End -->
-					</div>
-					<!-- Row End -->
-				</div>
-				<!-- Container End -->
-			</div>
+			{% include 'home/includes/cover.html'%}
 			<div class="page-section account-header buyer-logged-in">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
 						<!-- load sidebar here -->
-                        {% include 'home/includes/c_sidebar.html'%}
+                        {% include 'home/includes/v_sidebar.html'%}
 						</div>
 						<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
 							<div class="user-dashboard loader-holder">
